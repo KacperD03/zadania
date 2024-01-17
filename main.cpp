@@ -1,18 +1,13 @@
 #include <iostream>
-#include "funkcje.h"
+#include "funkcje2.h"
 
 using namespace std;
 
-int main() 
-{
-	cout << Logarytm(57)<<endl;
+int main() {
+    System system;
+    system.login();
+    system.checkLoginStatus();
+    system.selectEbook();
 
-	cout << Exponent(8)<<endl;
-
-	float tab[10] = { 76,88,13,378,2,822,23,8,95,29 };
-	cout << Odchylenie(tab)<<endl;
-
-	cout << mediana(tab, 10)<<endl;
-
-	return 0;
+    return 0;
 }
